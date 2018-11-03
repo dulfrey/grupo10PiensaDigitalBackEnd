@@ -22,6 +22,28 @@ ActiveRecord::Schema.define(version: 2018_11_03_163347) do
     t.index ["user_id"], name: "index_assistance_events_on_user_id"
   end
 
+  create_table "eventcommunities", force: :cascade do |t|
+    t.integer "event_id"
+    t.integer "user_id"
+    t.string "comentario"
+    t.date "fechacomentario"
+    t.integer "estado"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_eventcommunities_on_event_id"
+    t.index ["user_id"], name: "index_eventcommunities_on_user_id"
+  end
+
+  create_table "eventqualifications", force: :cascade do |t|
+    t.integer "event_id"
+    t.integer "calificacion"
+    t.string "comentario"
+    t.integer "estado"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_eventqualifications_on_event_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.string "description"

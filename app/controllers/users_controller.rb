@@ -6,6 +6,18 @@ class UsersController < ApplicationController
     
     def index
         @users = User.all
+        render json: @users, status: :ok
+    end
+    
+    def index_filter
+        users = User.where username:params[:username]
+        render json:users,status: :ok
+    end
+
+    def update
+        user = User.find(params[:id])
+        user.update(user_params_update)
+        render json:user,status: :ok
     end
     
     private
