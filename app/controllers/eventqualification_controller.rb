@@ -10,23 +10,23 @@ class EventqualificationController < ApplicationController
     end
 
     def index_filter
-        users = User.where username:params[:username]
-        render json:users,status: :ok
+        eventqualification = Eventqualification.where codUsuario:params[:codUsuario]
+        render json:eventqualification,status: :ok
     end
 
     def update
-        user = User.find(params[:id])
-        user.update(user_params_update)
-        render json:user,status: :ok
+        eventqualification = Eventqualification.find(params[:id])
+        eventqualification.update(eventqualification_params_update)
+        render json:eventqualification,status: :ok
     end
 
      private
      
      def eventqualification_params
-        params.permit(:username, :password)
+        params.permit(:codEvento, :codUsuario, :Calificacion, :Comentario)
      end
 
-     def user_params_update
-        params.permit(:username)
+     def eventqualification_params_update
+        params.permit(:codEvento,:codUsuarios, :Comentario)
      end
 end
