@@ -9,4 +9,6 @@ class User < ApplicationRecord
     has_many :events, :through => :responsableEvents
     has_many :assistanceEvents
     has_many :events, :through => :assistanceEvents
+    has_many :eventqualifications
+    has_many :events, :through => :eventqualifications 
 end

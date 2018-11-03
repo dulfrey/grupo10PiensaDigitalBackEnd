@@ -4,4 +4,6 @@ class Event < ApplicationRecord
   has_many :users, :through => :responsableEvents 
   has_many :assistanceEvents
   has_many :users, :through => :assistanceEvents
+  has_many :eventqualifications
+  has_many :users, :through => :eventqualifications 
 end
