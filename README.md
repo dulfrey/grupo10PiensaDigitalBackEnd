@@ -1,24 +1,24 @@
-# README
+# [IT'S FREE](https://dulfrey.github.io/grupo10PiensaDigital/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[IT'S FREE](https://dulfrey.github.io/grupo10PiensaDigital/) es un prototipo diseñado como proyecto para el curso DESARROLLO FULL STACK Y TECNOLOGÍAS HÍBRIDAS del proyecto GENERACIÓN DE CAPACIDADES EN EL ECOSISTEMA DIGITAL DE BOGOTÁ, MEDIANTE FORMACIÓN ESPECIALIZADA EN TI del [Ministerio de Tecnologías de la Información y la Comunicación](https://www.mintic.gov.co/portal/604/w3-article-63361.html) en conjunto con [Colciencias](www.colciencias.gov.co ) y [Fedesoft](www.fedesoft.org).
 
-Things you may want to cover:
+## Implementación
 
-* Ruby version
+Para la creación de este prototipo se utilizó:
 
-* System dependencies
+* [Ioinc](https://ionicframework.com/) permite crear, probar e implementar aplicaciones móviles híbridas multiplataforma.
 
-* Configuration
+* Ruby on Rayls [Ruby on Rayls](https://rubyonrails.org/)
+ 
 
-* Database creation
+## [Online Demo](https://dulfrey.github.io/grupo10PiensaDigital/)
 
-* Database initialization
+## Creador
 
-* How to run the test suite
+BONES UN fue creado por 
+**[Dulfrey Hernández](https://github.com/dulfrey)**.
+**[Jhon Cordero](https://github.com/jhonjc16)**.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+* https://twitter.com/dulfrey
+* https://github.com/dulfrey
