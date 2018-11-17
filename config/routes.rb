@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'assistance_event/listado_asistencia/:event_id', to: 'assistance_event#listado_asistencia'
   get 'assistants/:id', to: 'events#to_list_asist'
   get 'responsibles/:id', to: 'events#to_list_responsibles'
+  get 'auth/', to: 'users#auth'
 end

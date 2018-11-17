@@ -8,6 +8,11 @@ class UsersController < ApplicationController
         @users = User.all
         render json: @users, status: :ok
     end
+    def auth
+        @user = User.find_by(email:params[:email])
+        isAuth = @user.authenticate(params[:password])
+        render json: isAuth, status: :ok
+    end
     
     def index_filter
         users = User.where username:params[:username]
